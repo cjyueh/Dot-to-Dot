@@ -1,0 +1,21 @@
+.container {
+	position: relative;
+}
+
+button {
+	position: absolute;
+}
+
+#dotOne {
+	/*border-radius: .5px;*/
+	height: 2px;
+	margin-top: 50px;
+	margin-left: 200px;
+	width: 2px;
+}
+
+#dotTwo {
+	/*border-radius: .5px;*/
+	margin-top: 50px;
+	margin-left: 900px;
+}
