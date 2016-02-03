@@ -6,7 +6,8 @@ button {
 	position: absolute;
 }
 
-#dotOne {
+.dot {
+	outline: none;
 	background-color: white;
 	border: solid 1px black;
 	border-radius: 50%;
@@ -16,12 +17,39 @@ button {
 	width: 25px;
 }
 
-#dotTwo {
-	background-color: white;
-	border: solid 1px black;
-	border-radius: 50%;
-	height: 25px;
-	margin-top: 50px;
+.active {
+	animation-name: pulse;
+	animation-duration: 2s; 
+	animation-timing-function: ease-in; 
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0px 0px 0px purple;
+	}
+	100% {
+		box-shadow: 0px 0px 100px purple;
+	}
+}
+
+.left-side {
+	margin-left: 200px;
+}
+
+.right-side {
 	margin-left: 900px;
-	width: 25px;
+}
+
+.footer {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }

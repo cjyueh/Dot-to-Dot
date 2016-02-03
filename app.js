@@ -13,16 +13,20 @@
 // Continue making connection lines visible by clicking dots in numbered order until finish back at dotOne
 // If timer reaches zero, stop game, reset image to dots for additional attempts
 
-$(document).ready(function() {
-  console.log("linked.");
-  $('#dotOne').animate({backgroundColor: 'red'});
-});
+// $(document).ready(function() {
+//   console.log("linked.");
+//   $('#dotOne').animate({"box-shadow": 0 0 10px teal}, 1000, easing ] [, complete ] );
+// });
+
+
+// function init() {
+//   //calls other functions
+// }
 
 
 // function setImage() {
 //   // sets only dots visible / lines invisible
 //   // set dotOne effect
-
 // }
 
 // function clickDot() {
@@ -34,6 +38,7 @@ $(document).ready(function() {
 //   // }
 //   // .hover(dot glows);
 // }
+
 
 // function countdown() {
 //   // timer countdown
