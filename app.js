@@ -28,6 +28,8 @@ $(document).ready(function() {
 // }
 
 function clickDot() {
+  // set event listener on an set of jquery elements
+  // $(".dot").on("click", function(e){ console.log(e.target, "clicked")})
   $('#dot-one').on('click', switchGlow1to2);
   $('#dot-two').on('click', connectDots1to2);
   $('#dot-two').on('click', switchGlow2to3);
@@ -42,6 +44,12 @@ function clickDot() {
   // }
   // .hover(dot glows);
 }
+
+/*
+  event callback functions get passed the event object
+  use the `.taget` method on the event to find the element that the event
+  just occurred on
+*/
 
 function connectDots1to2() {
   $('#line-one').animate({
@@ -62,15 +70,6 @@ function connectDots3to1() {
   });
   $('#dot-one').removeClass('glow');
 }
-
-// function connectDots3to1() {
-//   $('#line-three').animate({
-//     height: "+=900px",
-//     width: "+=675px",
-//     transform: rotate("45deg")
-//   });
-//   $('#dot-one').removeClass('glow');
-// }
 
 function switchGlow1to2() {
   $('#dot-one').removeClass('glow');
