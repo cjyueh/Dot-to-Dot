@@ -67,6 +67,17 @@
 	margin-top: 200px;
 }
 
+#line-three {
+	border-bottom: 2px solid red;
+    margin-left: 900px;
+    margin-top: 209px;
+    transform: rotate(-168deg);
+    transform-origin: left;
+/*    width: 691px;*/
+    width: width;
+    
+}
+
 #dot-four {
 	margin-left: 200px;
 	margin-top: 200px;
