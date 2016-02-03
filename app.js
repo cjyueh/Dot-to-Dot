@@ -13,32 +13,53 @@
 // Continue making connection lines visible by clicking dots in numbered order until finish back at dotOne
 // If timer reaches zero, stop game, reset image to dots for additional attempts
 
-// $(document).ready(function() {
-//   console.log("linked.");
-//   $('#dotOne').animate({"box-shadow": 0 0 10px teal}, 1000, easing ] [, complete ] );
-// });
-
+$(document).ready(function() {
+  console.log("linked.");
+  clickDot();
+});
 
 // function init() {
 //   //calls other functions
 // }
-
 
 // function setImage() {
 //   // sets only dots visible / lines invisible
 //   // set dotOne effect
 // }
 
-// function clickDot() {
-//   // on dotOne click {
-//   //   countdown();
-//   // }
-//   // on dotTwo and other clicks {
-//   //   showConnect();
-//   // }
-//   // .hover(dot glows);
-// }
+function clickDot() {
+  $('#dot-one').on('click', switchGlow);
+  // on dotOne click {
+  //   countdown();
+  // }
+  // on dotTwo and other clicks {
+  //   showConnect();
+  // }
+  // .hover(dot glows);
+}
 
+function switchGlow() {
+  $('#dot-one').removeClass('active');
+  $('#dot-two').toggleClass('active');
+}
+
+
+// function setTimer() {
+//   var count = document.getElementById('timer');
+//   var timeOut = function(){
+//     count.innerHTML = parseInt(count.innerHTML) - 1;
+//     timer = setTimeout(timeOut, 1000);
+//     if (count.innerHTML === "0") {
+//       clearTimeout(timer);
+//    }
+//   };
+//   setTimeout(timeOut, 1000);
+// }
+// var count = 10;
+// var timer = setInterval(function() {
+//     $("#timer").html(count--);
+//     if(count == 1) clearInterval(timer);
+// }, 1000);
 
 // function countdown() {
 //   // timer countdown
