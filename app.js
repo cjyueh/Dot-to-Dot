@@ -29,6 +29,7 @@ $(document).ready(function() {
 
 function clickDot() {
   $('#dot-one').on('click', switchGlow);
+  $('#dot-two').on('click', connectDots);
   // on dotOne click {
   //   countdown();
   // }
@@ -38,9 +39,16 @@ function clickDot() {
   // .hover(dot glows);
 }
 
+function connectDots() {
+  $('.line').animate({
+      width: "+=700px"
+  });
+  $('#dot-two').removeClass('glow');
+}
+
 function switchGlow() {
-  $('#dot-one').removeClass('active');
-  $('#dot-two').toggleClass('active');
+  $('#dot-one').removeClass('glow');
+  $('#dot-two').toggleClass('glow');
 }
 
 
