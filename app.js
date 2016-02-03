@@ -28,9 +28,9 @@ $(document).ready(function() {
 // }
 
 function clickDot() {
-  // set event listener on an set of jquery elements
+  // set event listener on a set of jquery elements
   // $(".dot").on("click", function(e){ console.log(e.target, "clicked")})
-  $('#dot-one').on('click', switchGlow1to2);
+  $('#dot-one').on('click', switchGlow1to2, countdown);
   $('#dot-two').on('click', connectDots1to2);
   $('#dot-two').on('click', switchGlow2to3);
   $('#dot-three').on('click', connectDots2to3);
@@ -47,9 +47,13 @@ function clickDot() {
 
 /*
   event callback functions get passed the event object
-  use the `.taget` method on the event to find the element that the event
+  use the `.target` method on the event to find the element that the event
   just occurred on
 */
+
+function oneDotActive() {
+
+}
 
 function connectDots1to2() {
   $('#line-one').animate({
@@ -72,30 +76,33 @@ function connectDots3to1() {
 }
 
 function switchGlow1to2() {
-  $('#dot-one').removeClass('glow');
+  $('#dot-one').toggleClass('glow');
   $('#dot-two').toggleClass('glow');
 }
 
 function switchGlow2to3() {
-  $('#dot-two').removeClass('glow');
+  $('#dot-two').toggleClass('glow');
   $('#dot-three').toggleClass('glow');
 }
 
 function switchGlow3to1() {
-  $('#dot-three').removeClass('glow');
+  $('#dot-three').toggleClass('glow');
   $('#dot-one').toggleClass('glow');
 }
 
-var seconds = 30;
-var timer = setInterval(function(){
-  $('#timer').html(seconds);
-  seconds -= 1;
-  if (seconds === -1) {
-    console.log("out of time"); //to check
-    clearInterval(timer);
-  }
-  // if finish connecting dots, stop clock
-}, 1000);
+function countdown() {
+  var seconds = 30;
+  var timer = setInterval(function() {
+    $('#timer').html(seconds);
+    seconds -= 1;
+    if (seconds === -1) {
+      console.log("out of time"); //to check
+      clearInterval(timer);
+    }
+    // if finish connecting dots, stop clock
+  }, 1000);
+}
+
 
 // function showConnect() {
 //   // make connection lines visible
