@@ -53,7 +53,7 @@ function clickDot() {
 
 function connectDots1to2() {
   $('#line-one').animate({
-      width: "+=675px"
+      width: "+=725px"
   });
 }
 
@@ -66,7 +66,7 @@ function connectDots2to3() {
 
 function connectDots3to1() {
   $('#line-three').animate({
-    width: "+=691px",
+    width: "+=741px",
   });
   $('#dot-one').removeClass('glow');
 }
