@@ -56,6 +56,13 @@ function connectDots2to3() {
   // $('#dot-three').removeClass('glow');
 }
 
+function connectDots3to1() {
+  $('#line-three').animate({
+    width: "+=691px",
+  });
+  $('#dot-one').removeClass('glow');
+}
+
 // function connectDots3to1() {
 //   $('#line-three').animate({
 //     height: "+=900px",
