@@ -32,6 +32,8 @@ function clickDot() {
   $('#dot-two').on('click', connectDots1to2);
   $('#dot-two').on('click', switchGlow2to3);
   $('#dot-three').on('click', connectDots2to3);
+  $('#dot-three').on('click', switchGlow3to1);
+  $('#dot-one').on('click', connectDots3to1); 
   // on dotOne click {
   //   countdown();
   // }
@@ -51,8 +53,17 @@ function connectDots2to3() {
   $('#line-two').animate({
       height: "+=125px"
   });
-  $('#dot-three').removeClass('glow');
+  // $('#dot-three').removeClass('glow');
 }
+
+// function connectDots3to1() {
+//   $('#line-three').animate({
+//     height: "+=900px",
+//     width: "+=675px",
+//     transform: rotate("45deg")
+//   });
+//   $('#dot-one').removeClass('glow');
+// }
 
 function switchGlow1to2() {
   $('#dot-one').removeClass('glow');
@@ -62,6 +73,11 @@ function switchGlow1to2() {
 function switchGlow2to3() {
   $('#dot-two').removeClass('glow');
   $('#dot-three').toggleClass('glow');
+}
+
+function switchGlow3to1() {
+  $('#dot-three').removeClass('glow');
+  $('#dot-one').toggleClass('glow');
 }
 
 // function setTimer() {
