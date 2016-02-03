@@ -45,7 +45,6 @@ function connectDots1to2() {
   $('#line-one').animate({
       width: "+=675px"
   });
-  $('#dot-two').removeClass('glow');
 }
 
 function connectDots2to3() {
