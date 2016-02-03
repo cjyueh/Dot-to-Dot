@@ -86,29 +86,16 @@ function switchGlow3to1() {
   $('#dot-one').toggleClass('glow');
 }
 
-// function setTimer() {
-//   var count = document.getElementById('timer');
-//   var timeOut = function(){
-//     count.innerHTML = parseInt(count.innerHTML) - 1;
-//     timer = setTimeout(timeOut, 1000);
-//     if (count.innerHTML === "0") {
-//       clearTimeout(timer);
-//    }
-//   };
-//   setTimeout(timeOut, 1000);
-// }
-// var count = 10;
-// var timer = setInterval(function() {
-//     $("#timer").html(count--);
-//     if(count == 1) clearInterval(timer);
-// }, 1000);
-
-// function countdown() {
-//   // timer countdown
-//   // if timer reaches zero {
-//   //   setImage();
-//   // }
-// }
+var seconds = 30;
+var timer = setInterval(function(){
+  $('#timer').html(seconds);
+  seconds -= 1;
+  if (seconds === -1) {
+    console.log("out of time"); //to check
+    clearInterval(timer);
+  }
+  // if finish connecting dots, stop clock
+}, 1000);
 
 // function showConnect() {
 //   // make connection lines visible
