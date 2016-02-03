@@ -28,8 +28,10 @@ $(document).ready(function() {
 // }
 
 function clickDot() {
-  $('#dot-one').on('click', switchGlow);
-  $('#dot-two').on('click', connectDots);
+  $('#dot-one').on('click', switchGlow1to2);
+  $('#dot-two').on('click', connectDots1to2);
+  $('#dot-two').on('click', switchGlow2to3);
+  $('#dot-three').on('click', connectDots2to3);
   // on dotOne click {
   //   countdown();
   // }
@@ -39,18 +41,29 @@ function clickDot() {
   // .hover(dot glows);
 }
 
-function connectDots() {
-  $('.line').animate({
-      width: "+=700px"
+function connectDots1to2() {
+  $('#line-one').animate({
+      width: "+=675px"
   });
   $('#dot-two').removeClass('glow');
 }
 
-function switchGlow() {
+function connectDots2to3() {
+  $('#line-two').animate({
+      height: "+=125px"
+  });
+  $('#dot-three').removeClass('glow');
+}
+
+function switchGlow1to2() {
   $('#dot-one').removeClass('glow');
   $('#dot-two').toggleClass('glow');
 }
 
+function switchGlow2to3() {
+  $('#dot-two').removeClass('glow');
+  $('#dot-three').toggleClass('glow');
+}
 
 // function setTimer() {
 //   var count = document.getElementById('timer');
