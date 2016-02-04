@@ -65,7 +65,7 @@ function oneDotActive(event) {
 
 function connectDots1to2() {
   $('#line-1').animate({
-      width: "+=725px"
+      width: "+=105px"
   });
   console.log(this);
   console.log(this.innerHTML);
@@ -79,7 +79,7 @@ function connectDots2to3() {
 
 function connectDots3to1() {
   $('#line-3').animate({
-    width: "+=741px",
+    width: "+=75px",
   });
   $('#dot-1').removeClass('glow');
 }
@@ -87,6 +87,7 @@ function connectDots3to1() {
 function switchGlow1to2() {
   $('#dot-1').toggleClass('glow');
   $('#dot-2').toggleClass('glow');
+  countdown();
 }
 
 function switchGlow2to3() {
