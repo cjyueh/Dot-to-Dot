@@ -3,15 +3,16 @@
 // Cool name for game: ??
 
 
-// GAME LOGIC / RULES OF PLAY
-// HTML/CSS has full image, dots and connections lines in separate tags
-// Upon page load, show only numbered dots, lines invisible
-// Click starter dotOne and 2 things happen:
-// 1 - countdown/timer starts
-// 2 - make connection line visible by clicking dotTwo
-// Dots glow as cursor hovers over them
-// Continue making connection lines visible by clicking dots in numbered order until finish back at dotOne
-// If timer reaches zero, stop game, reset image to dots for additional attempts
+/*
+GAME LOGIC / RULES OF PLAY
+Upon page load, show only numbered dots, connections lines hidden, dot-1 glows (start play here).
+When each dot is clicked:
+  1 - line from previous dot is drawn to current dot
+  2 - next dot in sequence starts to glow
+  3 - only next dot can be clicked
+  Special when dot-1 is clicked - countdown starts
+If timer reaches zero, stop game, reset image to dots for additional attempts
+*/
 
 $(document).ready(function() {
   console.log("linked.");
@@ -24,22 +25,24 @@ $(document).ready(function() {
 
 // function setImage() {
 //   // sets only dots visible / lines invisible
-//   // set dotOne effect
+//   // set dot1 effect
 // }
 
 function clickDot() {
   // set event listener on a set of jquery elements
   // $(".dot").on("click", function(e){ console.log(e.target, "clicked")})
-  $('#dot-one').on('click', switchGlow1to2, countdown);
-  $('#dot-two').on('click', connectDots1to2);
-  $('#dot-two').on('click', switchGlow2to3);
-  $('#dot-three').on('click', connectDots2to3);
-  $('#dot-three').on('click', switchGlow3to1);
-  $('#dot-one').on('click', connectDots3to1); 
-  // on dotOne click {
+  $('#dot-1').on('click', switchGlow1to2);
+  $('#dot-2').on('click', connectDots1to2);
+  $('#dot-2').on('click', switchGlow2to3);
+  $('#dot-3').on('click', connectDots2to3);
+  $('#dot-3').on('click', switchGlow3to1);
+  $('#dot-1').on('click', connectDots3to1); 
+
+
+  // on dot1 click {
   //   countdown();
   // }
-  // on dotTwo and other clicks {
+  // on dot2 and other clicks {
   //   showConnect();
   // }
   // .hover(dot glows);
@@ -51,43 +54,49 @@ function clickDot() {
   just occurred on
 */
 
-function oneDotActive() {
-
+function oneDotActive(event) {
+  var dots = document.getElementsByClassName("dot");
+  var listener = function() {
+    // something;
+  };
+  event.target.addEventListener('click', listener, false);
+  event.target.removeEventListener('click', listener, false);
 }
 
 function connectDots1to2() {
-  $('#line-one').animate({
+  $('#line-1').animate({
       width: "+=725px"
   });
+  console.log(this);
+  console.log(this.innerHTML);
 }
 
 function connectDots2to3() {
-  $('#line-two').animate({
+  $('#line-2').animate({
       height: "+=125px"
   });
-  // $('#dot-three').removeClass('glow');
 }
 
 function connectDots3to1() {
-  $('#line-three').animate({
+  $('#line-3').animate({
     width: "+=741px",
   });
-  $('#dot-one').removeClass('glow');
+  $('#dot-1').removeClass('glow');
 }
 
 function switchGlow1to2() {
-  $('#dot-one').toggleClass('glow');
-  $('#dot-two').toggleClass('glow');
+  $('#dot-1').toggleClass('glow');
+  $('#dot-2').toggleClass('glow');
 }
 
 function switchGlow2to3() {
-  $('#dot-two').toggleClass('glow');
-  $('#dot-three').toggleClass('glow');
+  $('#dot-2').toggleClass('glow');
+  $('#dot-3').toggleClass('glow');
 }
 
 function switchGlow3to1() {
-  $('#dot-three').toggleClass('glow');
-  $('#dot-one').toggleClass('glow');
+  $('#dot-3').toggleClass('glow');
+  $('#dot-1').toggleClass('glow');
 }
 
 function countdown() {
@@ -101,9 +110,27 @@ function countdown() {
     }
     // if finish connecting dots, stop clock
   }, 1000);
+
 }
 
+var dotsArray = ["dot-0", "dot-1", "dot-2", "dot-3", "dot-4"];
+var lineWidths = ["0", "+=725px", "0", "+=741"];
+var lineHeights = ["0", "0", "+=125px", "0"];
 
-// function showConnect() {
-//   // make connection lines visible
-// }
+function connect (){
+  var n = this.innerHTML;
+  connectDots(n);
+  switchGlow(n);
+}
+
+function connectDots(n) {
+  $("#"+dotsArray[n]).animate({
+    width: lingLengths[n],
+  });
+  $('#dot-1').removeClass('glow');
+}
+
+function switchGlow(n) {
+  $("#"+dotsArray[n]).toggleClass('glow');
+  $('#'+dotsArray[n+1]).toggleClass('glow');
+}
