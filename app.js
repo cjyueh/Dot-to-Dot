@@ -35,6 +35,7 @@ function clickDot() {
   // $('#dot-3').on('click', lineConnect2to3);
   // $('#dot-3').on('click', dotGlow3to4);
   // $('#dot-4').on('click', lineConnect3to4); 
+
   var n = this.innerHTML;
   $("#"+dotsArray[n]).on('click', dotGlow(n));
 
@@ -64,6 +65,19 @@ function oneDotActive(event) {
   event.target.removeEventListener('click', listener, false);
 }
 
+var dotsArray = ["dot-0", "dot-1", "dot-2", "dot-3", "dot-4", "dot-5", "dot-6", "dot-7", "dot-8", "dot-9", "dot-10", "dot-11", "dot-12", "dot-13", "dot-14", "dot-15", "dot-16", "dot-17", "dot-18", "dot-19", "dot-20", "dot-21", "dot-22", "dot-23", "dot-24", "dot-25", "dot-26", "dot-27", "dot-28", "dot-29", "dot-30", "dot-31", "dot-32", "dot-33", "dot-34"];
+var lineWidthsArr = ["0", "+=105px", "0", "+=75", "0", "+=50px", "0", "+=35px", "+=35px", "0", "+=25px", "0", "+=20px", "0", "+=80px", "0", "+=15px", "0", "+=145px", "0", "+=40px", "0", "+=15px", "0", "+=40px", "0", "+=30px", "0", "+=20px", "0", "+=23px", "+=23px", "0", "+=105px"];
+var lineHeightsArr = ["0", "0", "+=125px", "0", "+=100px", "0", "+=80", "0", "0", "+=50px", "0", "+=60px", "0", "+=60px", "0", "+=55px", "0", "+=55px", "0", "+=81px", "0", "+=50px", "0", "+=135px", "0", "+=80px", "0", "+=130px", "0", "+=20px", "0", "0", "+=70px", "0"];
+
+function lineConnect(n) {
+  $("#"+dotsArray[n]).animate({
+    width: lineWidthsArr[n],
+  });
+  $("#"+dotsArray[n]).animate({
+    height: lineHeightsArr[n],
+  });
+}
+
 function lineConnect1to2() {
   $('#line-1').animate({
       width: "+=105px"
@@ -85,6 +99,10 @@ function lineConnect3to4() {
   $('#dot-1').removeClass('glow');
 }
 
+function dotGlow(n) {
+  $("#"+dotsArray[n]).toggleClass('glow');
+  $('#'+dotsArray[n+1]).toggleClass('glow');
+}
 // function dotGlow1to2() {
 //   $('#dot-1').toggleClass('glow');
 //   $('#dot-2').toggleClass('glow');
@@ -102,7 +120,7 @@ function lineConnect3to4() {
 // }
 
 function countdown() {
-  var seconds = 30;
+  var seconds = 15;
   var timer = setInterval(function() {
     $('#timer').html(seconds);
     seconds -= 1;
@@ -113,23 +131,4 @@ function countdown() {
     // if finish connecting dots, stop clock
   }, 1000);
 
-}
-
-var dotsArray = ["dot-0", "dot-1", "dot-2", "dot-3", "dot-4", "dot-5", "dot-6", "dot-7", "dot-8", "dot-9", "dot-10", "dot-11", "dot-12", "dot-13", "dot-14", "dot-15", "dot-16", "dot-17", "dot-18", "dot-19", "dot-20", "dot-21", "dot-22", "dot-23", "dot-24", "dot-25", "dot-26", "dot-27", "dot-28", "dot-29", "dot-30", "dot-31", "dot-32", "dot-33", "dot-34"];
-var lineWidthsArr = ["0", "+=105px", "0", "+=75", "0", "+=50px", "0", "+=35px", "+=35px", "0", "+=25px", "0", "+=20px", "0", "+=80px", "0", "+=15px", "0", "+=145px", "0", "+=40px", "0", "+=15px", "0", "+=40px", "0", "+=30px", "0", "+=20px", "0", "+=23px", "+=23px", "0", "+=105px"];
-var lineHeightsArr = ["0", "0", "+=125px", "0", "+=100px", "0", "+=80", "0", "0", "+=50px", "0", "+=60px", "0", "+=60px", "0", "+=55px", "0", "+=55px", "0", "+=81px", "0", "+=50px", "0", "+=135px", "0", "+=80px", "0", "+=130px", "0", "+=20px", "0", "0", "+=70px", "0"];
-
-
-function lineConnect(n) {
-  $("#"+dotsArray[n]).animate({
-    width: lineWidthsArr[n],
-  });
-  $("#"+dotsArray[n]).animate({
-    height: lineHeightsArr[n],
-  });
-}
-
-function dotGlow(n) {
-  $("#"+dotsArray[n]).toggleClass('glow');
-  $('#'+dotsArray[n+1]).toggleClass('glow');
 }
