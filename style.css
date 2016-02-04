@@ -1,6 +1,7 @@
 body {
-	background: url("images/sf-skyline-lineart.jpg") no-repeat center center fixed; 
-	background-size: 200%;
+/*	background: url("images/sf-skyline-lineart.jpg") no-repeat center center fixed; 
+	background-size: 200%;*/
+	background: url("images/test-01.jpg"); /*no-repeat center center fixed; */
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11px;
 }
@@ -14,8 +15,8 @@ body {
 }
 
 .dot {
-	background-color: white;
-	border: solid 1px black;
+	background-color: #cccccc;
+	border: solid 1px #cccccc;
 	border-radius: 50%;
 	height: 20px;
 	outline: none;
@@ -43,19 +44,19 @@ body {
 }
 
 .horizontal {
-	background-color: red;
-	height: 2px;
+	background-color: #666666;
+	height: 5px;
 	width: 0;
 }
 
 .vertical {
-	background-color: red;
+	background-color: #666666;
 	height: 0;
-	width: 2px;
+	width: 5px;
 }
 
 .diagonal {
-	border-bottom: 2px solid red;
+	border-bottom: 5px solid #666666;
 	transform-origin: left;
 }
 
@@ -68,6 +69,7 @@ body {
 	left: 120px;
 	top: 445px;
 	transition: width 1s ease-in-out;
+/*	width: 105px;*/
 }
 
 #dot-2 {
@@ -91,6 +93,7 @@ body {
 	left: 245px;
 	top: 310px;
 	transition: width 1s ease-in-out;
+/*	width: 75px;*/
 }
 
 #dot-4 {
@@ -364,6 +367,104 @@ body {
 #dot-26 {
 	left: 745px;
 	top: 150px;
+}
+
+#line-26 {
+	left: 765px;
+	top: 159px;
+/*	transition: width 1s ease-in-out;*/
+	width: 30px;
+}
+
+#dot-27 {
+	left: 795px;
+	top: 150px;
+}
+
+#line-27 {
+	left: 804px;
+	top: 170px;
+/*	transition: height 1s ease-in-out;*/
+	height: 130px;
+}
+
+#dot-28 {
+	left: 795px;
+	top: 300px;
+}
+
+#line-28 {
+	left: 815px;
+	top: 309px;
+/*	transition: width 1s ease-in-out;*/
+	width: 20px;
+}
+
+#dot-29 {
+	left: 835px;
+	top: 300px;
+}
+
+#line-29 {
+	left: 844px;
+	bottom: -231px;
+/*	transition: height 1s ease-in-out;*/
+	height: 20px;
+}
+
+#dot-30 {
+	left: 835px;
+	top: 260px;
+}
+
+#line-30 {
+	left: 852px;
+	top: 262px;
+	transform: rotate(-45deg);
+    width: 23px;
+/*	width: width;*/
+}
+
+#dot-31 {
+	left: 865px;
+	top: 230px;
+}
+
+#line-31 {
+	left: 881px;
+	top: 246px;
+	transform: rotate(45deg);
+    width: 23px;
+/*	width: width;*/
+}
+
+#dot-32 {
+	left: 895px;
+	top: 260px;
+}
+
+#line-32 {
+	left: 904px;
+	top: 280px;
+/*	transition: height 1s ease-in-out;*/
+	height: 70px;
+}
+
+#dot-33 {
+	left: 895px;
+	top: 350px;
+}
+
+#line-33 {
+	left: 915px;
+	top: 359px;
+/*	transition: width 1s ease-in-out;*/
+	width: 105px;
+}
+
+#dot-34 {
+	left: 1020px;
+	top: 350px;
 }
 
 .footer {
