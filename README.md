@@ -33,6 +33,7 @@ None
 * Revise timer to use browser time, fix delay
 * Make only one dot clickable at a time
 * Freeze game when time runs out
+* Have RESET button to clear out lines and restart the game
 * Add draggable line feature
 * Fine-tune styling
 
