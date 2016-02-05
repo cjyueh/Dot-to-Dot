@@ -49,7 +49,7 @@ function lineConnect(m, lineWidthsArr, lineHeightsArr) {
   if (n === 1) {
     countdown();
   } else if (n > 1) {
-    if ($('#line-'+(n-1)).hasClass("horizontal" || "diagonal")) {
+    if ($('#line-'+(n-1)).hasClass("horizontal")) {
       var lineWidth = lineWidthsArr[(n-1)];
       console.log(lineWidth);
       $('#line-'+(n-1)).animate({
@@ -73,12 +73,12 @@ function dotGlow() {
 }
 
 function countdown() {
-  var seconds = 15;
+  var seconds = 20;
   var timer = setInterval(function() {
     $('#timer').html(seconds);
     seconds -= 1;
     if (seconds === -1) {
-      console.log("out of time"); //to check
+      alert("TOO SLOW!"); //to check
       clearInterval(timer);
     }
     // if finish connecting dots, stop clock

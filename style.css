@@ -60,11 +60,6 @@ body {
 	width: 5px;
 }
 
-.diagonal {
-	border-bottom: 5px solid #666666;
-	transform-origin: left;
-}
-
 #dot-1 {
 	left: 100px;
 	top: 435px;
@@ -145,9 +140,10 @@ body {
 #line-7 {
 	left: 401px;
 	top: 320px;
+	transition: width .25s ease-in-out;
 	transform: rotate(-70deg);
+	transform-origin: left;
 /*	width: 35px;*/
-	width: width;
 }
 
 #dot-8 {
@@ -158,9 +154,10 @@ body {
 #line-8 {
 	left: 418px;
 	top: 288px;
+	transition: width .25s ease-in-out;
 	transform: rotate(70deg);
+	transform-origin: left;
 /*	width: 35px;*/
-	width: width;
 }
 
 #dot-9 {
@@ -231,9 +228,10 @@ body {
 #line-14 {
 	left: 520px;
 	top: 371px;
+	transition: height .25s ease-in-out;
 	transform: rotate(-80deg);
+	transform-origin: left;
 /*	width: 80px;*/
-	width: width;
 }
 
 #dot-15 {
@@ -280,9 +278,10 @@ body {
 #line-18 {
 	left: 573px;
 	top: 293px;
+	transition: height .25s ease-in-out;
 	transform: rotate(80deg);
+	transform-origin: left;
 /*	width: 145px;*/
-	width: width;
 }
 
 #dot-19 {
@@ -425,9 +424,10 @@ body {
 #line-30 {
 	left: 852px;
 	top: 262px;
+	transition: height .25s ease-in-out;
 	transform: rotate(-45deg);
-/*    width: 23px;*/
-	width: width;
+	transform-origin: left;
+/*	width: 23px;*/
 }
 
 #dot-31 {
@@ -438,9 +438,10 @@ body {
 #line-31 {
 	left: 881px;
 	top: 246px;
+	transition: height .25s ease-in-out;
 	transform: rotate(45deg);
+	transform-origin: left;
 /*	width: 23px;*/
-	width: width;
 }
 
 #dot-32 {
