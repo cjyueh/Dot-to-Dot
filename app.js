@@ -21,7 +21,7 @@ $(document).ready(function() {
     lineConnect(m, lineWidthsArr, lineHeightsArr);
   });
   $('#dot-1').click(countdown);
-  $('#dot-34').click(winning);
+  $('#dot-34').click(winningClick);
 });
 
   
@@ -52,7 +52,7 @@ function lineConnect(m, lineWidthsArr, lineHeightsArr) {
   } else if (n > 1) {
     if ($('#line-'+(n-1)).hasClass("horizontal")) {
       var lineWidth = lineWidthsArr[(n-1)];
-      console.log(lineWidth);
+      // console.log(lineWidth);
       $('#line-'+(n-1)).animate({
       width: lineWidth,
       });
@@ -86,9 +86,12 @@ function countdown() {
   }, 1000);
 }
 
-function winning() {
-  $('.container').fadeTo('slow', 0.3, function() {
-    $('body').css('background-image', 'url("images/background-01.jpg")');
-    }).fadeTo('slow', 1);
-  // $(this).fadeOut()
+function winningClick() {
+  $('.container').fadeOut('slow', showImage);
+}
+
+function showImage() {
+  $('body').fadeIn('slow', function() {
+      $(this).css('background-image', 'url("images/background-01.jpg")');
+    });
 }
