@@ -21,7 +21,7 @@ $(document).ready(function() {
     lineConnect(m, lineWidthsArr, lineHeightsArr);
   });
   $('#dot-1').click(countdown);
-  $('dot-34').click(winning);
+  $('#dot-34').click(winning);
 });
 
   
@@ -92,7 +92,3 @@ function winning() {
     }).fadeTo('slow', 1);
   // $(this).fadeOut()
 }
-
-// function showImage() {
-//   $(this).fadeIn()
-// }
