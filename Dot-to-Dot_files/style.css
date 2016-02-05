@@ -2,19 +2,13 @@ body {
 /*	background: url("images/sf-skyline-lineart.jpg") no-repeat center center fixed; 
 	background-size: 200%;*/
 	background-color: #68D2B5;
-/*	background: url("images/background-01.jpg");*/ /*no-repeat center center fixed; */
-	font-family: 'Comfortaa', cursive;
+	background: url("images/background-01.jpg"); /*no-repeat center center fixed; */
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11px;
 }
 
 .container {
 	position: relative;
-}
-
-h1 {
-/*	margin-top: 50px;*/
-/*	font-size: 50px;*/
-	color: #efefef;
 }
 
 .board {
@@ -44,10 +38,10 @@ h1 {
 
 @keyframes glow {
 	0% {
-		box-shadow: 0px 0px 0px #FF3837;
+		box-shadow: 0px 0px 0px #FFA200;
 	}
 	100% {
-		box-shadow: 0px 0px 100px #FF3837;
+		box-shadow: 0px 0px 100px #FFA200;
 	}
 }
 
@@ -482,9 +476,8 @@ h1 {
 
 .footer {
 	height: 100px;
-	color: #efefef;
 	width: 100%;
-	font-size: 25px;
+	font-size: 50px;
 	position: absolute;
 	bottom: 0;
 	padding: 1rem;

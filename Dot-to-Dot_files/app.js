@@ -21,7 +21,6 @@ $(document).ready(function() {
     lineConnect(m, lineWidthsArr, lineHeightsArr);
   });
   $('#dot-1').click(countdown);
-  $('dot-34').click(winning);
 });
 
   
@@ -85,14 +84,3 @@ function countdown() {
     // if finish connecting dots, stop clock
   }, 1000);
 }
-
-function winning() {
-  $('.container').fadeTo('slow', 0.3, function() {
-    $('body').css('background-image', 'url("images/background-01.jpg")');
-    }).fadeTo('slow', 1);
-  // $(this).fadeOut()
-}
-
-// function showImage() {
-//   $(this).fadeIn()
-// }
