@@ -1,4 +1,4 @@
-// Connect-the-Dots Game boilerplate pseudo-code
+// dot-to-dot: a connect-the-dots Game code
 
 /*
 Upon page load, show only numbered dots, connections lines hidden, dot-1 glows (start play here).
