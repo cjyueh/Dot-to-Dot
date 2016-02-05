@@ -33,3 +33,11 @@ None
 * Revise timer to use browser time, fix delay
 * Make only one dot clickable at a time
 * Freeze game when time runs out
+* Add draggable line feature
+* Fine-tune styling
+
+
+## Shout-Outs
+* Albert for the artwork
+* Franchini for the color selection
+* Ilias, Dani, and TA's Daniel and Tae for guidance
