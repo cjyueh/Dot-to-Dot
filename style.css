@@ -73,7 +73,7 @@ body {
 #line-1 {
 	left: 120px;
 	top: 445px;
-	transition: width 1s ease-in-out;
+	transition: width .25s ease-in-out;
 /*	width: 105px;*/
 }
 
@@ -85,7 +85,7 @@ body {
 #line-2 {
 	left: 234px;
 	bottom: -367px;
-	transition: height 1s ease-in-out;
+	transition: height .25s ease-in-out;
 /*	height: 125px;*/
 }
 
@@ -97,7 +97,7 @@ body {
 #line-3 {
 	left: 245px;
 	top: 310px;
-	transition: width 1s ease-in-out;
+	transition: width .25s ease-in-out;
 /*	width: 75px;*/
 }
 
@@ -109,8 +109,8 @@ body {
 #line-4 {
 	left: 329px;
 	top: 320px;
-/*	transition: height 1s ease-in-out;*/
-	height: 80px;
+	transition: height .25s ease-in-out;
+/*	height: 80px;*/
 }
 
 #dot-5 {
@@ -121,8 +121,8 @@ body {
 #line-5 {
 	left: 340px;
 	top: 409px;
-/*	transition: width 1s ease-in-out;*/
-	width: 50px;
+	transition: width .25s ease-in-out;
+/*	width: 50px;*/
 }
 
 #dot-6 {
@@ -133,8 +133,8 @@ body {
 #line-6 {
 	left: 399px;
 	bottom: -332px;
-/*	transition: height 1s ease-in-out;*/
-	height: 80px;
+	transition: height .25s ease-in-out;
+/*	height: 80px;*/
 }
 
 #dot-7 {
@@ -146,8 +146,8 @@ body {
 	left: 401px;
 	top: 320px;
 	transform: rotate(-70deg);
-    width: 35px;
-/*	width: width;*/
+/*	width: 35px;*/
+	width: width;
 }
 
 #dot-8 {
@@ -159,8 +159,8 @@ body {
 	left: 418px;
 	top: 288px;
 	transform: rotate(70deg);
-    width: 35px;
-/*	width: width;*/
+/*	width: 35px;*/
+	width: width;
 }
 
 #dot-9 {
@@ -171,8 +171,8 @@ body {
 #line-9 {
 	left: 429px;
 	top: 340px;
-/*	transition: height 1s ease-in-out;*/
-	height: 50px;
+	transition: height .25s ease-in-out;
+/*	height: 30px;*/
 }
 
 #dot-10 {
@@ -183,8 +183,8 @@ body {
 #line-10 {
 	left: 440px;
 	top: 379px;
-/*	transition: width 1s ease-in-out;*/
-	width: 25px;
+	transition: width .25s ease-in-out;
+/*	width: 25px;*/
 }
 
 #dot-11 {
@@ -195,8 +195,8 @@ body {
 #line-11 {
 	left: 474px;
 	bottom: -301px;
-/*	transition: height 1s ease-in-out;*/
-	height: 60px;
+	transition: height .25s ease-in-out;
+/*	height: 60px;*/
 }
 
 #dot-12 {
@@ -207,8 +207,8 @@ body {
 #line-12 {
 	left: 485px;
 	top: 299px;
-/*	transition: width 1s ease-in-out;*/
-	width: 20px;
+	transition: width .25s ease-in-out;
+/*	width: 20px;*/
 }
 
 #dot-13 {
@@ -219,8 +219,8 @@ body {
 #line-13 {
 	left: 514px;
 	top: 310px;
-/*	transition: height 1s ease-in-out;*/
-	height: 60px;
+	transition: height .25s ease-in-out;
+/*	height: 60px;*/
 }
 
 #dot-14 {
@@ -232,8 +232,8 @@ body {
 	left: 520px;
 	top: 371px;
 	transform: rotate(-80deg);
-    width: 80px;
-/*	width: width;*/
+/*	width: 80px;*/
+	width: width;
 }
 
 #dot-15 {
@@ -244,8 +244,8 @@ body {
 #line-15 {
 	left: 534px;
 	bottom: -206px;
-/*	transition: height 1s ease-in-out;*/
-	height: 55px;
+	transition: height .25s ease-in-out;
+/*	height: 55px;*/
 }
 
 #dot-16 {
@@ -256,8 +256,8 @@ body {
 #line-16 {
 	left: 545px;
 	top: 209px;
-/*	transition: width 1s ease-in-out;*/
-	width: 15px;
+	transition: width .25s ease-in-out;
+/*	width: 15px;*/
 }
 
 #dot-17 {
@@ -268,8 +268,8 @@ body {
 #line-17 {
 	left: 569px;
 	top: 220px;
-/*	transition: height 1s ease-in-out;*/
-	height: 55px;
+	transition: height .25s ease-in-out;
+/*	height: 55px;*/
 }
 
 #dot-18 {
@@ -281,8 +281,8 @@ body {
 	left: 573px;
 	top: 293px;
 	transform: rotate(80deg);
-    width: 145px;
-/*	width: width;*/
+/*	width: 145px;*/
+	width: width;
 }
 
 #dot-19 {
@@ -293,8 +293,8 @@ body {
 #line-19 {
 	left: 599px;
 	bottom: -367px;
-/*	transition: height 1s ease-in-out;*/
-	height: 81px;
+	transition: height .25s ease-in-out;
+/*	height: 81px;*/
 }
 
 #dot-20 {
@@ -305,8 +305,8 @@ body {
 #line-20 {
 	left: 610px;
 	top: 344px;
-/*	transition: width 1s ease-in-out;*/
-	width: 40px;
+	transition: width .25s ease-in-out;
+/*	width: 40px;*/
 }
 
 #dot-21 {
@@ -317,8 +317,8 @@ body {
 #line-21 {
 	left: 659px;
 	top: 355px;
-/*	transition: height 1s ease-in-out;*/
-	height: 50px;
+	transition: height .25s ease-in-out;
+/*	height: 50px;*/
 }
 
 #dot-22 {
@@ -329,8 +329,8 @@ body {
 #line-22 {
 	left: 670px;
 	top: 414px;
-/*	transition: width 1s ease-in-out;*/
-	width: 15px;
+	transition: width .25s ease-in-out;
+/*	width: 15px;*/
 }
 
 #dot-23 {
@@ -341,8 +341,8 @@ body {
 #line-23 {
 	left: 694px;
 	bottom: -336px;
-/*	transition: height 1s ease-in-out;*/
-	height: 135px;
+	transition: height .25s ease-in-out;
+/*	height: 135px;*/
 }
 
 #dot-24 {
@@ -353,8 +353,8 @@ body {
 #line-24 {
 	left: 705px;
 	top: 259px;
-/*	transition: width 1s ease-in-out;*/
-	width: 40px;
+	transition: width .25s ease-in-out;
+/*	width: 40px;*/
 }
 
 #dot-25 {
@@ -365,8 +365,8 @@ body {
 #line-25 {
 	left: 754px;
 	bottom: -181px;
-/*	transition: height 1s ease-in-out;*/
-	height: 80px;
+	transition: height .25s ease-in-out;
+/*	height: 80px;*/
 }
 
 #dot-26 {
@@ -377,8 +377,8 @@ body {
 #line-26 {
 	left: 765px;
 	top: 159px;
-/*	transition: width 1s ease-in-out;*/
-	width: 30px;
+	transition: width .25s ease-in-out;
+/*	width: 30px;*/
 }
 
 #dot-27 {
@@ -389,8 +389,8 @@ body {
 #line-27 {
 	left: 804px;
 	top: 170px;
-/*	transition: height 1s ease-in-out;*/
-	height: 130px;
+	transition: height .25s ease-in-out;
+/*	height: 130px;*/
 }
 
 #dot-28 {
@@ -401,8 +401,8 @@ body {
 #line-28 {
 	left: 815px;
 	top: 309px;
-/*	transition: width 1s ease-in-out;*/
-	width: 20px;
+	transition: width .25s ease-in-out;
+/*	width: 20px;*/
 }
 
 #dot-29 {
@@ -413,8 +413,8 @@ body {
 #line-29 {
 	left: 844px;
 	bottom: -231px;
-/*	transition: height 1s ease-in-out;*/
-	height: 20px;
+	transition: height .25s ease-in-out;
+/*	height: 20px;*/
 }
 
 #dot-30 {
@@ -426,8 +426,8 @@ body {
 	left: 852px;
 	top: 262px;
 	transform: rotate(-45deg);
-    width: 23px;
-/*	width: width;*/
+/*    width: 23px;*/
+	width: width;
 }
 
 #dot-31 {
@@ -439,8 +439,8 @@ body {
 	left: 881px;
 	top: 246px;
 	transform: rotate(45deg);
-    width: 23px;
-/*	width: width;*/
+/*	width: 23px;*/
+	width: width;
 }
 
 #dot-32 {
@@ -451,8 +451,8 @@ body {
 #line-32 {
 	left: 904px;
 	top: 280px;
-/*	transition: height 1s ease-in-out;*/
-	height: 70px;
+	transition: height .25s ease-in-out;
+/*	height: 70px;*/
 }
 
 #dot-33 {
@@ -463,8 +463,8 @@ body {
 #line-33 {
 	left: 915px;
 	top: 359px;
-/*	transition: width 1s ease-in-out;*/
-	width: 105px;
+	transition: width .25s ease-in-out;
+/*	width: 105px;*/
 }
 
 #dot-34 {
