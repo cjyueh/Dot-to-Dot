@@ -75,7 +75,7 @@ function dotGlow() {
 function countdown() {
   var seconds = 20;
   var timer = setInterval(function() {
-    $('#timer').html(seconds);
+    $('#timer').html("timer:  " + seconds + " sec.");
     seconds -= 1;
     if (seconds === -1) {
       alert("TOO SLOW!"); //to check
