@@ -40,4 +40,5 @@ None
 ## Shout-Outs
 * Albert for the artwork
 * Franchini for the color selection
+* Vien for helping me get over my first hump
 * Ilias, Dani, and TA's Daniel and Tae for guidance
