@@ -61,6 +61,17 @@ h1 {
 	width: 0;
 }
 
+#reset {
+	padding: 4px 10px;
+	border: 1px solid white;
+	color: white;
+	font-size: 16px;
+	background: #2C91B9;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
 .vertical {
 	background-color: #efefef;
 	height: 0;
