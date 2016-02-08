@@ -5,7 +5,7 @@ Try to beat the clock! Click on the glowing dot to draw lines and complete the i
 
 
 ## Link to Game
-[dot-to-dot](http://dot-to-dot.bitballoon.com/)
+Play [dot-to-dot](http://dot-to-dot.bitballoon.com/)
 
 
 ## User Stories
@@ -17,10 +17,10 @@ Try to beat the clock! Click on the glowing dot to draw lines and complete the i
 
 
 ## Technologies Used
-* HTML
-* CSS
+* HTML5
+* CSS3
 * Bootstrap
-* JavaScript - vanilla
+* JavaScript ES6
 * jQuery
 * jQuery UI
 
