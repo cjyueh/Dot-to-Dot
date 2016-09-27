@@ -12,6 +12,7 @@ When each dot is clicked:
 If timer reaches zero, stop game, reset image to dots for additional attempts
 */
 
+
 $(document).ready(function() {
   console.log("linked.");
   // dotGlow($('#dot-1'));
@@ -22,8 +23,11 @@ $(document).ready(function() {
   });
   $('#dot-1').click(countdown);
   $('#dot-34').click(winningClick);
+  resetButton();
 });
 
+//Jessie's global variables
+var seconds;
   
  
 
@@ -48,7 +52,7 @@ function lineConnect(m, lineWidthsArr, lineHeightsArr) {
       //if line is ".horizontal" || ".diagonal", width: lineWidthsArr[n];
       //if line is ".vertical", height: lineHeightsArr[n];
   if (n === 1) {
-    countdown();
+    // countdown();
   } else if (n > 1) {
     if ($('#line-'+(n-1)).hasClass("horizontal")) {
       var lineWidth = lineWidthsArr[(n-1)];
@@ -81,6 +85,14 @@ function countdown() {
     if (seconds === -1) {
       alert("TOO SLOW!"); //to check
       clearInterval(timer);
+      //make dots do pretty glowing thing when you run out of time
+      $('.dot').toggleClass('glow');
+      lineConnect.stop();
+    }
+    //Jessie trying to make it so if button is clicked, seconds go back to 20!
+    //it works! but then it won't count down again when clicking dots
+    if ($('#reset').data("clicked")) {
+      seconds = 20;
     }
     // if finish connecting dots, stop clock
   }, 1000);
@@ -94,4 +106,13 @@ function showImage() {
   $('body').fadeIn('slow', function() {
       $(this).css('background-image', 'url("images/background-01.jpg")');
     });
+}
+
+//Jessie's reset function!
+function resetButton () {
+  $('#reset').on("click", function() {
+    $(this).data('clicked', true);
+    $('.line').css({'width' : '0px', 'height' : '0px'});
+    console.log("button pushed");
+  });
 }
